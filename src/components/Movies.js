@@ -17,7 +17,7 @@ const Movies = () => {
 	}
 
   return (	
-	<div style={{border: '2px solid red', margin:'10px', width:'100px'}}>
+	<div style={{border: '2px solid red', margin:'10px', width:'200px'}}>
 		<ul>Movies: {movieList.map(movie=>(
 			<div>
 				<li key={movie.id}>{movie.title}</li>
