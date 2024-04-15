@@ -6,6 +6,7 @@ import Movies from './components/Movies';
 import Translate from './components/Translate';
 import MultiTranslate from './components/MultiTranstlate';
 import Drinks from './components/Drinks';
+import DrinkTranslate from './components/DrinkTranslate';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <MultiTranslate />
       <Movies />
       <Drinks />
+      <DrinkTranslate />
     </div>
   );
 }
