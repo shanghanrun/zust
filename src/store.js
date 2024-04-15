@@ -5,7 +5,7 @@ export const countStore = create((set)=>({
 	movieList:[],
 	increase:()=>set((state)=>({count: state.count+1})),
 	decrease:()=>set((state)=>({count: state.count-1})),
-	setMovieList:(list) => set((state)=>({movieList: list})),
+	setMovieList:(list) => set((state)=>({movieList: [...state.movieList, ...list]})),
 	addMovie:(val) => set((state)=> ({movieList: [...state.movieList, val]})),
 	deleteMovie:(id)=> set((state)=>({movieList: state.movieList.filter((item)=> item.id !==id)}))
 }))
