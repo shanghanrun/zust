@@ -32,8 +32,8 @@ const MultiTranslate = () => {
 
   return (
     <div>
-      <div>영어 리스트: {eTextList.join(', ')}</div>
-      <div>번역된 한글 리스트: {kTextList.join(', ')}</div>
+      <div>영어 리스트: [{eTextList.join(', ')}]</div>
+      <div>번역된 한글 리스트: [{kTextList.join(', ')}]</div>
     </div>
   );
 };
