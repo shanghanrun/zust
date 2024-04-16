@@ -25,7 +25,7 @@ const drinks = [
 ];
 
 const DrinkTranslate = () => {
-  const apiKey = 'AIzaSyCAML_uTKhZsBwPYCPnU4j-pwd98ykZ13E';
+  const apiKey = process.env.REACT_APP_API_KEY;
   const [translatedDrinks, setTranslatedDrinks] = useState([]);
 
   async function translateDrinks(){
