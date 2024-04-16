@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Translate = () => {
-  const apiKey = 'AIzaSyCAML_uTKhZsBwPYCPnU4j-pwd98ykZ13E'; 
+  const apiKey = process.env.REACT_APP_API_KEY;  
   const [eText, setEText] = useState("Hi, I'm gonna test google translate. I hope this works.");
   const [kText, setKText] = useState('');
 

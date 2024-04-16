@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const MultiTranslate = () => {
-  const apiKey = 'AIzaSyCAML_uTKhZsBwPYCPnU4j-pwd98ykZ13E'; 
+  const apiKey = process.env.REACT_APP_API_KEY; 
   const [eTextList, setETextList] = useState(['hi','name', 'school']);
   const [kTextList, setKTextList] = useState([]);
 
